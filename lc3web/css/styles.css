@@ -1,0 +1,115 @@
+/* styles.css for web-based LC3 simulator */
+
+html {
+    overflow-y: scroll;
+}
+
+#scroll-container
+{
+    text-align: center;
+}
+
+.register-name
+{
+    font-weight: bold;
+}
+
+#register-reset-buttons {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.memory-label span {
+    max-width: 100pt;
+    overflow-wrap: break-word;
+}
+
+.memory-address
+{
+    font-family: monospace;
+}
+
+#memory-table {
+    overflow-x: scroll;
+}
+#memory-table.disabled {
+    color: gray;
+}
+
+/* Configuration for the memory address table */
+button.memory-dropdown {
+    padding: 0px 6px; /* default: 6px 12px */
+}
+.shrink-to-fit {
+    width: 1px;
+}
+
+.hidden-alert {
+    display: none;
+}
+
+.hex-value
+{
+    font-family: monospace;
+}
+
+.hex-edit-popover .error-list {
+    margin: 1em 0;
+}
+#console-contents {
+    height: 350px;
+}
+
+footer {
+    min-height: 30px;
+}
+
+/* Lists of errors for input validation */
+.error-list {
+    color: gray;
+    list-style: none;
+    margin: 0;
+}
+.error-list li {
+    margin: 1em 0;
+    display: none;
+}
+
+/* File drop setup */
+.drop-box {
+    margin: 0 auto;
+    display: table;
+    width: 196px;
+    height: 196px;
+    border: 8px gray dashed;
+    color: gray;
+    text-align: center;
+}
+.drop-box span {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 200%;
+}
+.drop-box.hover {
+    color: #337ab7;
+    border-color: #337ab7;
+}
+.alert-buttons {
+    margin-top: 1em;
+    text-align: right;
+}
+
+#release-message, #raw-release-message {
+    font-size: 200%;
+    color: gray;
+    text-align: center;
+    margin: 0.5em auto;
+}
+
+.modal .alert {
+    margin-top: 1em;
+}
+
+#assembly-input, #raw-input {
+    font-family: monospace;
+}
