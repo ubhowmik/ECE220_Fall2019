@@ -15,13 +15,13 @@ AGAIN
 
 ISR_KB
 		ST  R0,SaveR0 ;callee-save
-		ST  R7,SaveR7 ;callee-save
+		ST  R1,SaveR1 ;callee-save
 		LDI R0,KBDR ;read a charcter from keyboard and clear ready bit
 DPOLL	LDI R1, DSR  ; Test Display Regster is ready
 		BRzp DPOLL
 		STI R0, DDR
     LD  R0,SaveR0
-    LD  R7,SaveR7
+    LD  R1,SaveR1
 		HALT
 		RTI
 EN_IE   .FILL   x4000 ;enable IE 0100_0000_0000_0000
@@ -32,5 +32,5 @@ DSR  	.FILL 	xFE04 	 ; Address of DSR
 DDR  	.FILL 	xFE06     ; Address of DDR
 KBINTV  .FILL   x0180 ;INT vector table address for keyboard
 SaveR0  .BLKW   #1
-SaveR7  .BLKW   #1
+SaveR1  .BLKW   #1
 .END
