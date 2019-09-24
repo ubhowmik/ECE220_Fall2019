@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 
-char Upper2Lower (char inchar);
+char Lower2Upper (char inchar);
 
 int main ()
 {
@@ -13,14 +13,14 @@ int main ()
 	while(echo != '\n')
 	{
 		scanf("%c",&echo);
-		upcase=Upper2Lower(echo);
+		upcase=Lower2Upper(echo);
 		printf("%c",upcase);
 	}
 	
 	return 0;
 }
 
-char Upper2Lower(char inchar)
+char Lower2Upper(char inchar)
 {
 	char outchar;
 		
