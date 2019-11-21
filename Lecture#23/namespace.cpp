@@ -1,5 +1,4 @@
 #include <iostream> 
-
 using namespace std; 
 
 // Variable created inside namespace 
@@ -8,24 +7,18 @@ namespace first
 	int val = 500; 
 } 
 
-namespace second
-{ 
-	int val = 2500; 
-} 
+// Global variable 
+int val = 100; 
 
 int main() 
 { 
 	// Local variable 
 	int val = 200; 
 
-	/* std::cout << first::val << std::endl; 
-	std::cout << second::val << std::endl;
-	std::cout << val << std::endl; */
-	
+	// These variables can be accessed from 
+	// outside the namespace using the scope 
 	// operator :: 
 	cout << first::val << '\n'; 
-	cout << second::val << '\n';
-	cout << val << '\n';
 
 	return 0; 
 }
