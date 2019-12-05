@@ -1,0 +1,11 @@
+10
+Adult 152.8 5.2
+Adult 140.44 6.2
+Adult 150.77 4.5
+Child 40.2 4.6
+Child 35.4 5.1
+Adult 142.33 6.1
+Child 60.5 5.1
+Child 70.3 4.2
+Adult 142.33 4.5
+Child 60.5 3.5
