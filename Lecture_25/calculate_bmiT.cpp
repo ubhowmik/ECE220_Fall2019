@@ -1,7 +1,7 @@
 /*Problem Statement:
 Given a data file, BMI_Data.txt (which contains "Weight" and "Height" data of a group of 
 Adult and Children), find the maximum BMI of the whole dataset and each group.
-Use Vector to store the in two subclasses, Adult and Child, derived from Person
+Use Vector to store the data in two subclasses, Adult and Child, derived from Person
 base class.*/ 
 
 #include<iostream>
